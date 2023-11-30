@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans;
+  font-family: nf;
+  /* outline: 1px solid red;    */
+}
+@import url(./media.css);
+@font-face {
+  font-family: sans;
+  src: url(../IRANSansWeb_Medium.ttf);
+}
+@font-face {
+  font-family: boldsans;
+  src: url(../DiodrumArabic-Semibold.ttf);
+}
+@font-face {
+  font-family: nf;
+  src: url(../IRANSansXFaNum-Medium.ttf);
+}
+
+.log-top{
+  width:60px;
+  height:60px;
+}
+.log-top > img{
+  width:100%;
+  height: 100%;
+  
+}
+
+.navbar-nav {
+  display: flex;
+  font-family: sans;
+}
+/* start header */
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  row-gap: 10px;
+}
+
+.header > .image {
+  width: 470px;
+}
+.header > .image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.nav{
+  position: relative;
+}
+nav > .container-fluid > .collapse > ul > li >.submenu{
+  width:95% ;
+  /* height: 400px; */
+  background-color:rgb(233, 229, 229); 
+  padding-top: 20px;
+  padding-right: 50px;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  top: 77px;
+  z-index: 9;
+  display: none;
+}
+
+ nav > .container-fluid > .collapse > ul > li:hover >.submenu{
+  display: block;
+} 
+nav > .container-fluid > .collapse > ul > li >.submenu  > .row > div > h5 {
+  color: black;
+}
+nav > .container-fluid > .collapse > ul > li >.submenu > *{
+  color: gray;
+}
+nav > .container-fluid > .collapse > ul > li >.submenu  > .row > div > p:hover {
+  color: orange;
+}
+/* End header */
+
+
+/* start categori */
+.categori > h1 {
+  padding:50px 0 ;
+}
+/* End categhori */
+
+
+h3.customer-opin{
+  text-shadow: 0 0 3px #FF0000;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start location */
+#location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 35px;
+  margin-top: 50px;
+  margin-bottom: 300px;
+}
+.location {
+  position: relative;
+}
+.location > .image {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  background-color:rgb(48, 46, 46);
+}
+.location > .image > img {
+  width: 100%;
+  height: 100%;
+}
+.location > .image:hover > img {
+  mix-blend-mode: multiply;
+}
+.location > .name{
+  text-align: center;
+  margin-top: 10px;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.leyer {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  display: none;
+}
+.location > .image:hover > div.leyer {
+  display: block;
+  
+}
+
+.leyer > h5 {
+  margin-left: 90px;
+  margin-top: 40px;
+}
+.leyer > .adress {
+  margin-left: 25px;
+  font-size:13px;
+  margin-top: 20px;
+}
+.leyer > .timework,.daywork {
+  margin-top: 30px;
+  font-size:13px;
+
+  text-align: center;
+}
+.leyer >.map {
+  width:300px;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(197, 191, 191, 0.492);
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  margin-top:60px;
+  color: black;
+}
+.leyer >.map:hover {
+  background-color: rgba(255, 255, 255, 0.516);
+
+}
+/* End location */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start End part */
+
+.contact > .row > .fristpart > div{
+  width: 150px;
+  height: 150px;
+}
+.contact > .row > .fristpart > div > img{
+  width: 100%;
+  height: 100%;
+}
+.contact > .row > .fristpart > p{
+  margin-right: 40px;
+ }
+ 
+.contact > .row > .fristpart >.social > span:hover{
+ color: lightseagreen;
+}
+.contact > .row > .secendpart{
+  margin-top:65px;
+ }
+ .contact > .row > .thirdpart{
+  margin-top:70px;
+ }
+ .contact > .row > .thirdpart > a{
+  color: white;
+  text-decoration: none;
+ }
+ .contact > .row > .fourthpart{
+  margin-top:70px;
+ }
+ .contact > .row > .fourthpart > p:nth-of-type(1){
+  font-size: 18px;
+  
+ }
+ .contact > .row > .fourthpart > p:nth-of-type(2){
+  font-size: 12px;
+ }
+ .contact > .row > .fourthpart > input{
+  border: unset;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.478);
+  color: black;
+ }
+ .contact > .row > .fourthpart >.arm {
+  margin-top: 20px;
+ }
+ .contact > .row > .fourthpart >.arm > div{
+  width: 60px;
+  height: 60px;
+ }
+ .contact > .row > .fourthpart >.arm > div > img{
+  width:100%;
+  height:100%;
+ }
+ .contact > .row > .fristpart > p{
+  color: rgb(83, 82, 82);
+  
+ }
+ .contact > .row > .fristpart > p:hover{
+  color: white;
+ }
+ .contact > .row > .secendpart > p{
+  color: rgb(83, 82, 82);
+  
+ }
+ .contact > .row > .secendpart > p:hover{
+  color: white;
+  
+ }
+ .contact > .row > .thirdpart > p{
+  color: rgb(83, 82, 82);
+  
+ }
+ .contact > .row > .thirdpart > p:hover{
+  color: white;
+  
+ }
+ .contact > .row > .fourthpart > p:nth-last-of-type(1){
+  color: rgb(83, 82, 82);
+ }
+ .contact > .row > .fourthpart > p:hover{
+  color: white;
+  
+ }
+.contact > .row > .col-md-6 > h1 {
+  margin-bottom: 20px;
+  /* background-color: red; */
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: boldsans;
+}
+.contact > .row > .col-md-6 > p {
+  font-family: boldsans;
+}
+
+.contact > .row > div > div {
+  /* background-color: blue; */
+  padding: 30px;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  column-gap: 15px;
+  font-size: 25px;
+  margin-left: 10px;
+  align-items: center;
+  align-items: center;
+}
+.contact > .row > div > .logo {
+  /* background-color: pink; */
+  margin-top: 20px;
+}
+
+
+/* End contact */
+
+/* finish End part */
+
+.top {
+  width: 30px;
+  height: 30px;
+  border-radius: 35%;
+  background-color: orange;
+  position: fixed;
+  bottom: 3px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+.top > span {
+  text-align: center;
+  align-items: center;
+  margin-left: 9px;
+  margin-top: 7px;
+}

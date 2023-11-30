@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات</title>
+    <link rel="stylesheet" href="./css/mahsool.css">
+    <link rel="stylesheet" href="./css/mahsoolmedia.css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Web/css/all.min.css">
+<script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <a href=""></a>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+   s
+      <button type="button" class="userphone btn text-warning">
+        <p id="userphone"></p>
+      </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mynavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav mx-auto" dir="rtl">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">صفحه اصلی</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="./mahsool.html">محصولات</a>
+
+            <div class="submenu container"dir="rtl">
+              <div class="row">
+               <div class="col-md-2">
+                <h5>لباس مردانه</h5>
+                <p>دورس</p>
+                <p>پیراهن</p>
+                <p>تیشرت</p>
+                <p>پیراهن پشمی</p>
+                <p>ست</p>
+                <p>پلیور</p>
+                <p>جلیقه</p>
+                <p>کاپشن</p>
+                <p>کت و شلوار</p>
+               </div>
+               <div class="col-md-2">
+                <h5>شلوار مردانه</h5>
+                <p>شلوار جین</p>
+                <p>شلوار پارچه ای</p>
+                <p>شلوار کتان</p>
+                <p>شلوار اسلش</p>
+                <p>شلوارک</p>
+               </div>
+               <div class="col-md-2">
+                <h5> کفش مردانه</h5>
+                <p>بوت و نیم بوت</p>
+                <p>کفش رسمی</p>
+                <p>کفش روزمره</p>
+                <p>کالج</p>
+                <p>صندل</p>
+               </div>
+               <div class="col-md-2">
+                <h5>اکسسوری مردانه</h5>
+                <p>انگشتر</p>
+                <p>کلاه</p>
+                <p>کمربند</p>
+                <p>کیف</p>
+                <p>عینک</p>
+                <p>جوراب</p>
+                <p>شال</p>
+                <p>دست بند</p>
+                <p>کروات</p>
+               </div>
+                  <div class="col-md-2">
+               </div>
+               <div class="col-md-2"><div><img src="./setman-img/megamenu/1.jpg" alt=""></div></div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./adress.html">آدرس شعب</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">ارتباط با ما</a>
+          </li>
+        </ul>
+        <div class="log-top"><img src="./setman-img/logo/logo-setmen-footer.svg" alt=""></div>
+         <form class="d-flex">
+        </form> 
+      </div>
+    </div>
+  </nav>
+  
+
+<div id="emtyprice">
+  <div class="moda ">
+  
+  <p>مقادیر حداقل و حداکثر را وارد کنید</p>
+  <button type="button" class="btn btn-danger" id="oneclose">close</button>
+</div>
+</div>
+<div id="not-exist">
+  <div class="massage">
+  
+    <p>موجود نیست</p>
+    <button type="button" class="btn btn-danger" id="twoclose">close</button>
+  </div>
+  </div>
+</div>
+
+  <div class="categori container-fluid bg-black text-white"><h1 class="text-center" style="  text-shadow: 0 0 3px #fd0303;">دسته بندی محصولات</h1>
+    <div class="d-flex justify-content-center gap-3 mt-5">
+      <h6 class="text-center ">دسته بندی محصولات</h6>
+     <a href="./index.html" class="text-white"><span class="fa-solid fa-house"></span></a>
+    </div>
+  </div>
+    
+    <div class="container mt-5" dir="rtl">
+       <div class="row">
+        <div class="col-md-3 bg-warnin">
+            <div id="filter" class="text-center mb-4">فیلتر ها براساس  </div>
+            <div id="accordion" class="d-flex flex-column gap-2 ">
+
+            
+                    <!-- end limited price -->
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseone">
+                         قیمت
+                        </a>
+                      </div>
+                      <div id="collapseone" class="collapse" data-bs-parent="#accordion">
+                        <div class="d-flex flex-column m-2 row-gap-4">
+                                                 
+     <div class="d-flex" dir="ltr">
+      <div class="wrapper ">
+       
+       <div class="row d-flex flex-wrap">
+        <div class="price-input" dir="rtl">
+          <div class="field d-flex column-gap-3 justify-content-center">
+            <span>حداقل:</span>
+            <input type="number" class="input-min" id="start" value="">
+          </div>
+          <div class="field d-flex column-gap-3 justify-content-center">
+            <span>حداکثر:</span>
+            
+            <input type="number" class="input-min" id="end" value="">
+          </div>
+         
+        
+       </div>
+        </div>
+    
+        <div class="slider mt-4">
+          <div class="progress"></div>
+        </div>
+      
+        <div class="range-input">
+        <input input type="range" class="range-min" min=""     max="700000" value="250000" step="175000" >
+          <input type="range"       class="range-max" min=""   max="700000" value="500000" step="170000">
+        </div>
+        <button type="button" class="ok btn btn-primary mt-4" id="ok">اعمال</button>
+      </div>
+    </div>
+   
+                          
+                        </div>
+                      </div>
+                    </div>
+
+
+              
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                     برند ها
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="d-flex flex-column m-2 row-gap-4 p-1">
+                      <button type="button" class="btn btn-primary rounded-4 w-50 mx-auto"   id="irani">ایرانی</button>
+                      <button type="button" class="btn btn-danger rounded-4 w-50 mx-auto"   id="khareji">خارجی</button>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                    فصول
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                      
+                      <div class="d-flex flex-column m-2 row-gap-4">
+                        <button type="button" class="btn btn-success w-50 mx-auto rounded-4"    id="bahar">بهاری</button>
+                        <button type="button" class="btn btn-danger w-50 mx-auto rounded-4"     id="tabestan">تابستانی</button>
+                        <button type="button" class="btn btn-warning w-50 mx-auto rounded-4"    id="paiz">پاییزی</button>
+                        <button type="button" class="btn btn-secondary w-50 mx-auto rounded-4"  id="zemestan">زمستانی</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+
+
+        <div class="col-md-9" >
+        
+         <div id="root" class="bg-in">
+    
+        </div>
+       </div>
+       </div>
+      </div>
+      <!-- start End part -->
+   
+      <div class="contact container-fluid  bg-dark mt-4 text-white" dir="rtl">
+        <div class="row">
+         <div class="fristpart  col-md-3 float-start">
+           <div class="logo"><img src="./setman-img/logo/logo-setmen-footer.svg" alt="">
+           
+           </div>
+         <p>آدرس :</p>
+         <p>تهران - بالاتر از میدان ولیعصر، چهارراه زرتشت، ساختمان رفاه (قدس)، طبقه چهارم</p>
+         <p>تلفن :</p>
+         <p>09195357038</p>
+         <div class="social">
+         <span class="fa-brands fa-instagram"></span>
+         <span class="fa-brands fa-telegram"></span>
+         <span class="fa-brands fa-whatsapp"></span>
+         <span class="fa-brands fa-youtube"></span>
+         </div>
+         </div>
+         <div class="secendpart col-md-3">
+           <p>ایمیل :</p>
+           <p>info@setmen.com
+             <p>ساعات کاری</p>
+             <p>11 الی 22 - همه روزه حتی روزهای تعطیل</p>
+           </p>
+         </div>
+         <div class="thirdpart  col-md-3">
+           <p>در یاره ما</p>
+           <p>حریم خصوصی</p>
+           <a href="./adress.html">آدرس شعب</a>
+         </non>
+         </div>
+         <div class="fourthpart  col-md-3">
+           <p>مشترک شوید تا آخرین اخبار را دریافت کنید </p>
+           <p>ما به شما تمامی اخبار حراج ها و رویداد ها را اطلاع رسانی میکنیم.</p>
+           <input type="search" class="text-center" id="" placeholder="ایمیل ...">
+           <div class="arm d-flex">
+           <div class=""><img src="./setman-img/arms/1.png"></div>
+           <div class=""><img src="./setman-img/arms/2.png"></div>
+         </div>
+         </div>
+        </div>
+       </div>
+       <!-- finish end part -->
+       <div class="top"><span class="fa-solid fa-up"></span></div>
+       <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./js/mahsooh.js"></script>
+</body>
+</html>
